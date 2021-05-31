@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TIC - TAC - TOE</title>
+</head>
+
+<body>
+    <main class="game">
+
+        <div> <button class="game__button game__button--reset" id="game-reset-button">Reset Game</button> </div>
+
+        <h2 id="game-title"> Current Player: <span id="game-player">❌</span> </h2>
+
+        <table class="board" id="game-board">
+
+            <tr class="board__row">
+                <td class="board__row__col-1 board__row__diagonal"></td>
+                <td class="board__row__col-2"></td>
+                <td class="board__row__col-3 board__row__anti-diagonal"></td>
+            </tr>
+
+            <tr class="board__row">
+                <td class="board__row__col-1"></td>
+                <td class="board__row__col-2 board__row__diagonal board__row__anti-diagonal"></td>
+                <td class="board__row__col-3"></td>
+            </tr>
+
+            <tr class="board__row">
+                <td class="board__row__col-1 board__row__anti-diagonal"></td>
+                <td class="board__row__col-2"></td>
+                <td class="board__row__col-3 board__row__diagonal"></td>
+            </tr>
+
+        </table>
+    </main>
+
+    <script src="tic-tac-toe.js"></script>
+</body>
+
+</html>
